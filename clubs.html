@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Club Categories | Student Clubs</title>
+    
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .intro-text {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #444;
+            font-size: 1.1em;
+        }
+
+        .categories-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 20px;
+        }
+
+        .category-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            background-color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .category-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        .category-icon {
+            font-size: 3em;
+            margin-bottom: 15px;
+        }
+
+        .category-title {
+            color: darkblue; /* Matches your nav link color */
+            margin: 0 0 15px 0;
+            font-size: 1.4em;
+        }
+
+        .category-description {
+            color: #555;
+            font-size: 0.95em;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        .explore-btn {
+            display: inline-block;
+            background-color: #e0e0e0;
+            color: #333;
+            padding: 8px 16px;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            font-size: 0.9em;
+            transition: background-color 0.2s ease;
+        }
+
+        .explore-btn:hover {
+            background-color: darkblue;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Discover Our Clubs</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="clubs.html">Clubs</a></li>
+            <li><a href="events.html">Events</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <p class="intro-text">Find your community! Explore the diverse range of student-led clubs and societies on campus. Whether you want to build robots, debate global issues, or play competitive sports, there is a place for you here.</p>
+
+        <div class="categories-grid">
+            <div class="category-card">
+                <div class="category-icon">💻</div>
+                <h2 class="category-title">Technology Clubs</h2>
+                <p class="category-description">Dive into coding, cybersecurity, robotics, and AI. Perfect for tech enthusiasts looking to build real-world projects and prepare for the tech industry.</p>
+                <a href="#" class="explore-btn">View Tech Clubs</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">⚽</div>
+                <h2 class="category-title">Sports Clubs</h2>
+                <p class="category-description">Stay active and competitive! Join intramural leagues, varsity training, or casual weekend games ranging from soccer and basketball to e-sports.</p>
+                <a href="#" class="explore-btn">View Sports Clubs</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🌍</div>
+                <h2 class="category-title">Cultural Clubs</h2>
+                <p class="category-description">Celebrate diversity and heritage. These societies host food festivals, traditional arts showcases, and language exchange programs.</p>
+                <a href="#" class="explore-btn">View Cultural Clubs</a>
+            </div>
+
+            <div class="category-card">
+                <div class="category-icon">🎙️</div>
+                <h2 class="category-title">Debate Societies</h2>
+                <p class="category-description">Sharpen your public speaking and critical thinking skills. Participate in Model UN, national debating tournaments, and campus-wide forums.</p>
+                <a href="#" class="explore-btn">View Debate Clubs</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Student Clubs Hub. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
